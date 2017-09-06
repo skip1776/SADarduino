@@ -4,8 +4,8 @@
 
 // name variables for the LED pin and delay
 int ledPin = 13; 
-int delayPeriodA = 500
-int delayPeriodB = 300
+int delayPeriodA = 500;
+int delayPeriodB = 300;
 
 // define setup by configuring pin 13 as an output
 void setup()
