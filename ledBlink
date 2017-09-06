@@ -1,9 +1,8 @@
 // ledBlink
-
-// Scott A. Dougherty, papercutter@comcast.net
+// Scott A. Dougherty
 // 2017 09 06
 
-// name variables for the LED pin and delay
+// name variables for the LED and delay
 int ledPin = 13; 
 int delayPeriodA = 1000;
 int delayPeriodB = 2000;
