@@ -1,4 +1,5 @@
 //  trafficLights
+//  runs an LED sequence of green, yellow, and red
 //  Scott A. Dougherty
 //  2017 09 06
 
@@ -14,8 +15,8 @@ pinMode(GREEN, OUTPUT);
 }
 
 //  define light timings
-int delayR = 5000;
-int delayY = 2000;
+int delayR = 7000;
+int delayY = 3000;
 int delayG = 5000;
 
 void loop() 
