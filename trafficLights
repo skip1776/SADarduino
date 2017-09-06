@@ -1,6 +1,7 @@
 //  trafficLights
 //  runs an LED sequence of green, yellow, and red
-//  Scott A. Dougherty
+
+//  Scott A. Dougherty, papercutter@comcast.net
 //  2017 09 06
 
 //  define pins
