@@ -1,0 +1,69 @@
+//  SOSblink
+//  sends an SOS message in morse code
+
+// Scott A. Dougherty, papercutter@comcast.net
+// 2017 09 06
+
+int ledPin = 13;
+int delayDit = 500;
+int delayDuh = 1500;
+int delayChar = 500;
+int delayMessage = 5000;
+
+void setup() {
+pinMode(ledPin, OUTPUT);  // initialize digital pin LED_BUILTIN as an output
+}
+
+void loop() 
+{
+digitalWrite(ledPin, HIGH); //sends a Dit
+delay(delayDit);
+digitalWrite(ledPin, LOW);
+delay(delayChar);
+
+digitalWrite(ledPin, HIGH); //sends a Dit
+delay(delayDit);
+digitalWrite(ledPin, LOW);
+delay(delayChar);
+
+digitalWrite(ledPin, HIGH); //sends a Dit
+delay(delayDit);
+digitalWrite(ledPin, LOW);
+delay(delayChar);
+
+delay(delayChar); //  adds a delay between characters
+
+digitalWrite(ledPin, HIGH); //sends a Duh
+delay(delayDuh);
+digitalWrite(ledPin, LOW);
+delay(delayChar);
+
+digitalWrite(ledPin, HIGH); //sends a Duh
+delay(delayDuh);
+digitalWrite(ledPin, LOW);
+delay(delayChar);
+
+digitalWrite(ledPin, HIGH); //sends a Duh
+delay(delayDuh);
+digitalWrite(ledPin, LOW);
+delay(delayChar);
+
+delay(delayChar); //  adds a delay between characters
+
+digitalWrite(ledPin, HIGH); //sends a Dit
+delay(delayDit);
+digitalWrite(ledPin, LOW);
+delay(delayChar);
+
+digitalWrite(ledPin, HIGH); //sends a Dit
+delay(delayDit);
+digitalWrite(ledPin, LOW);
+delay(delayChar);
+
+digitalWrite(ledPin, HIGH); //sends a Dit
+delay(delayDit);
+digitalWrite(ledPin, LOW);
+delay(delayChar);
+
+delay(delayMessage); //  adds a delay between messages
+}
