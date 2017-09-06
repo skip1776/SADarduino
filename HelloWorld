@@ -1,0 +1,16 @@
+//  HelloWorld
+
+//  Scott A. Dougherty, papercutter@comcast.net
+//  2017 09 03
+
+//  Use Ctrl+Shift+M to display the serial monitor
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  String comment = "Hello, world!";
+  delay(2000);
+  Serial.println(comment);
+}
