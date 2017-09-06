@@ -1,11 +1,11 @@
-// SADdelayGrow
+// lengthenGlow
 // Scott A. Dougherty
 // 2017 09 06
 
 // set variables
 int ledPin = 13;
 int delayPeriodA = 100;
-int delayPeriodB = 500
+int delayPeriodB = 500;
 
 void setup()
 {
