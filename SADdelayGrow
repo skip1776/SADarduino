@@ -1,0 +1,23 @@
+// SADdelayGrow
+// Scott A. Dougherty
+// 2017 09 06
+
+// set variables
+int ledPin = 13;
+int delayPeriodA = 100;
+int delayPeriodB = 500
+
+void setup()
+{
+pinMode(ledPin, OUTPUT);
+}
+
+// causes LED to illuminate for longer periods
+void loop()
+{
+digitalWrite(ledPin, HIGH);
+delay(delayPeriodA);
+digitalWrite(ledPin, LOW);
+delay(delayPeriodB);
+delayPeriodA = delayPeriodA + 100;
+}
