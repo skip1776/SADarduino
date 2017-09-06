@@ -1,21 +1,19 @@
 //  RepeatingMyself
 
 //  Scott A. Dougherty, papercutter@comcast.net
-//  2017 09 03
+//  2017 09 06
 
 //  Use Ctrl+Shift+M to display the serial monitor
 
 void setup() {
-  // put your setup code here, to run once
 Serial.begin(9600);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly
-  String comment = "Arduino: I feel like I keep repeating myself.";
-  delay(2000);
+String comment = "Arduino: I feel like I keep repeating myself.";
+delay(2000);
 Serial.println(comment);
-  String commentB = "User: What?";
-  delay(2500);
+String commentB = "User: What?";
+delay(2500);
 Serial.println(commentB);
 }
