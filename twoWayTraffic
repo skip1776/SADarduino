@@ -1,0 +1,53 @@
+//  twoWayTraffic
+// runs green, yellow, and red sequences in two directions
+
+//  Scott A. Dougherty, papercutter@comcast.net
+//  2017 09 06
+
+//  define pins
+#define RightG 4
+#define RightY 5
+#define RightR 6
+#define LeftG 12
+#define LeftY 11
+#define LeftR 10
+
+void setup() 
+{
+pinMode(RightG, OUTPUT);
+pinMode(RightY, OUTPUT);
+pinMode(RightR, OUTPUT);
+pinMode(LeftG, OUTPUT);
+pinMode(LeftY, OUTPUT);
+pinMode(LeftR, OUTPUT);
+}
+
+int delayRG = 8000;
+int delayY = 3500;
+
+void loop()
+{
+digitalWrite(RightG, HIGH);
+digitalWrite(RightY, LOW);
+digitalWrite(RightR, LOW);
+digitalWrite(LeftG, LOW);
+digitalWrite(LeftY, LOW);
+digitalWrite(LeftR, HIGH);
+delay(delayRG);
+
+digitalWrite(RightG, LOW);
+digitalWrite(RightY, HIGH);
+digitalWrite(RightR, LOW);
+digitalWrite(LeftG, LOW);
+digitalWrite(LeftY, HIGH);
+digitalWrite(LeftR, LOW);
+delay(delayY);
+
+digitalWrite(RightG, LOW);
+digitalWrite(RightY, LOW);
+digitalWrite(RightR, HIGH);
+digitalWrite(LeftG, HIGH);
+digitalWrite(LeftY, LOW);
+digitalWrite(LeftR, LOW);
+delay(delayRG);
+}
