@@ -1,4 +1,32 @@
 //  SOSfunction
-// 
 
-void
+// Scott A. Dougherty, papercutter@comcast.net
+// 2017 09 12
+
+const int ledPin = 13;
+const int delayDit = 250;
+const int delayDuh = 750;
+const int delayChar = 200;
+const int delayMessage = 5000;
+
+void setup() {
+pinMode(ledPin, OUTPUT);  // initialize digital pin LED_BUILTIN as an output
+}
+
+void loop() {
+for (int i = 0; i < 5; i ++)
+  {
+    morseSierra();
+    morseOscar();
+    morseSierra();
+  }
+  delay(2000);
+}
+
+void morseSierra(){
+
+digitalWrite(ledPin, HIGH); //sends a Dit
+delay(delayDit);
+digitalWrite(ledPin, LOW);
+delay(delayChar);
+}
