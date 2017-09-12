@@ -1,4 +1,6 @@
 //  SOSfunction
+//  creates functions for morse sequences Sierra and Oscar
+//  consider functions for Dit and Duh to further streamline the code
 
 // Scott A. Dougherty, papercutter@comcast.net
 // 2017 09 12
@@ -7,7 +9,7 @@ const int ledPin = 13;
 const int delayDit = 250;
 const int delayDuh = 750;
 const int delayChar = 200;
-const int delayMessage = 5000;
+const int delayMessage = 3000;
 
 void setup() {
 pinMode(ledPin, OUTPUT);  // initialize digital pin LED_BUILTIN as an output
@@ -19,14 +21,38 @@ for (int i = 0; i < 5; i ++)
     morseSierra();
     morseOscar();
     morseSierra();
+    delay(1500);
   }
-  delay(2000);
+  delay(delayMessage);
 }
 
-void morseSierra(){
+void morseSierra() {  // defines the morse code sequence for Sierra
 
 digitalWrite(ledPin, HIGH); //sends a Dit
 delay(delayDit);
+digitalWrite(ledPin, LOW);
+delay(delayChar);
+digitalWrite(ledPin, HIGH); //sends a Dit
+delay(delayDit);
+digitalWrite(ledPin, LOW);
+delay(delayChar);
+digitalWrite(ledPin, HIGH); //sends a Dit
+delay(delayDit);
+digitalWrite(ledPin, LOW);
+delay(delayChar);
+}
+
+void morseOscar() { // defines the morse code sequence for Oscar
+digitalWrite(ledPin, HIGH); //sends a Duh
+delay(delayDuh);
+digitalWrite(ledPin, LOW);
+delay(delayChar);
+digitalWrite(ledPin, HIGH); //sends a Duh
+delay(delayDuh);
+digitalWrite(ledPin, LOW);
+delay(delayChar);
+digitalWrite(ledPin, HIGH); //sends a Duh
+delay(delayDuh);
 digitalWrite(ledPin, LOW);
 delay(delayChar);
 }
