@@ -16,7 +16,7 @@ pinMode(ledPin, OUTPUT);  // initialize digital pin LED_BUILTIN as an output
 }
 
 void loop() {
-for (int i = 0; i < 5; i ++)
+for (int i = 0; i < 5; i ++) // sends SOS message 5 times followed by a delay
   {
     morseSierra();
     morseOscar();
