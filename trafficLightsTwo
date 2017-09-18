@@ -21,7 +21,6 @@ pinMode(greenB, OUTPUT);
 
 void loop() {
 changeLights();
-delay(15000);
 }
 
 void changeLights() {
