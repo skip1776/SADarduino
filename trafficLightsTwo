@@ -44,3 +44,4 @@ digitalWrite(redA, LOW);
 digitalWrite(yellowA, LOW);
 digitalWrite(greenA, HIGH);
 delay(3000);
+}
